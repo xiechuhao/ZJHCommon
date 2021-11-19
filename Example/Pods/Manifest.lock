@@ -1,0 +1,34 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
+  - ZJHCommon (0.1.0):
+    - SDWebImage (~> 5.8.4)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - SDWebImage (= 5.8.4)
+  - ZJHCommon (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  ZJHCommon:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+  ZJHCommon: 1c2d8207d7a19a5d7d241f0e797239b5295ca930
+
+PODFILE CHECKSUM: e722bcb5e8e38c81c4ed35b339b84958d0d5afb7
+
+COCOAPODS: 1.10.1

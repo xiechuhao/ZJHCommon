@@ -1,0 +1,6 @@
+framework module ZJHCommon {
+  umbrella header "ZJHCommon-umbrella.h"
+
+  export *
+  module * { export * }
+}

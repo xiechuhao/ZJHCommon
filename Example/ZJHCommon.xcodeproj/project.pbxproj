@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		235675549F2CB5246FF99B69 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		46B3D6B83B79E435DD80C0A7 /* ZJHCommon.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZJHCommon.podspec; path = ../ZJHCommon.podspec; sourceTree = "<group>"; };
+		235675549F2CB5246FF99B69 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		46B3D6B83B79E435DD80C0A7 /* ZJHCommon.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZJHCommon.podspec; path = ../ZJHCommon.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4A4953F1F9099099AB34A669 /* Pods-ZJHCommon_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJHCommon_Example.release.xcconfig"; path = "Target Support Files/Pods-ZJHCommon_Example/Pods-ZJHCommon_Example.release.xcconfig"; sourceTree = "<group>"; };
 		534D8D164B0FAD6267E8134A /* Pods-ZJHCommon_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJHCommon_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZJHCommon_Tests/Pods-ZJHCommon_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ZJHCommon_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJHCommon_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +46,7 @@
 		A245F10513F231268A33376D /* Pods_ZJHCommon_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJHCommon_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABCEDA706EADFA0A3AC2B826 /* Pods_ZJHCommon_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJHCommon_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDF5BC4D70F5E2AA24FA13F /* Pods-ZJHCommon_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJHCommon_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZJHCommon_Example/Pods-ZJHCommon_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EF6E944846CA3CA5B3D8725B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EF6E944846CA3CA5B3D8725B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				71CAF4B98A24974EBF267602 /* Pods-ZJHCommon_Tests.debug.xcconfig */,
 				534D8D164B0FAD6267E8134A /* Pods-ZJHCommon_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -314,10 +314,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZJHCommon_Example/Pods-ZJHCommon_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/ZJHCommon/ZJHCommon.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZJHCommon.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
