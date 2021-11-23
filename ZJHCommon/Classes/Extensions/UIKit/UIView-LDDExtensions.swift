@@ -188,13 +188,13 @@ extension UIView {
         }
         switch animationType {
         case .linear:
-            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         case .easeIn:
-            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
+            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
         case .easeOut:
-            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
         case .easeInOut:
-            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         }
         CATransaction.setCompletionBlock(completion)
         animation.duration = duration
@@ -302,12 +302,12 @@ extension UIView {
     @discardableResult
     func ldd_startAnimating(_ style: UIActivityIndicatorView.Style = .gray) -> UIActivityIndicatorView {
         if let aiv = ldd_activityIndicator() {
-            aiv.style = style
+            aiv.activityIndicatorViewStyle = style
             aiv.startAnimating()
             return aiv
         }
 
-        let aiv = UIActivityIndicatorView(style: style)
+        let aiv = UIActivityIndicatorView(activityIndicatorStyle: style)
         aiv.hidesWhenStopped = true
         aiv.translatesAutoresizingMaskIntoConstraints = false
         aiv.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
