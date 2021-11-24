@@ -186,16 +186,16 @@ extension UIView {
         case .vertical:
             animation = CAKeyframeAnimation(keyPath: "transform.translation.y")
         }
-        switch animationType {
-        case .linear:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-        case .easeIn:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
-        case .easeOut:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-        case .easeInOut:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        }
+//        switch animationType {
+//        case .linear:
+//            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+//        case .easeIn:
+//            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
+//        case .easeOut:
+//            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+//        case .easeInOut:
+//            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+//        }
         CATransaction.setCompletionBlock(completion)
         animation.duration = duration
         animation.values = [-8.0, 5.0, -8.0, 5.0, -4.0, 4.0, -2.0, 2.0, 0.0]
